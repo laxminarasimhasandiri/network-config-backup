@@ -1,7 +1,7 @@
 # 🌐 Network Configuration Backup Report
-**Generated:** 2026-05-06 14:25:05  
+**Generated:** 2026-05-06 14:29:12  
 **Total Devices:** 8  
-**Healthy:** 0 | **Warnings:** 6 | **Critical:** 2
+**Healthy:** 8 | **Warnings:** 0 | **Critical:** 0
 
 ---
 
@@ -9,14 +9,14 @@
 
 | Hostname | Type | IP Address | Role | Status |
 |----------|------|------------|------|--------|
-| CORE-SW-01 | Cisco Catalyst | 10.0.0.1 | Core Switch | ⚠️ WARNING |
-| DIST-SW-02 | Cisco Nexus | 10.0.0.2 | Distribution Switch | ⚠️ WARNING |
-| FW-PALOALTO-01 | Palo Alto PA-820 | 10.0.1.1 | Perimeter Firewall | ⚠️ WARNING |
-| SDWAN-EDGE-01 | Cisco Viptela | 10.0.2.1 | SD-WAN Edge | ⚠️ WARNING |
-| SDWAN-EDGE-02 | Cisco Viptela | 10.0.2.2 | SD-WAN Edge | ⚠️ WARNING |
-| WLC-ARUBA-01 | Aruba Controller | 10.0.3.1 | Wireless Controller | ❌ CRITICAL |
-| F5-LTM-01 | F5 BIG-IP | 10.0.4.1 | Load Balancer | ❌ CRITICAL |
-| RTR-BGP-01 | Cisco ASR 1001 | 192.168.1.1 | WAN Router | ⚠️ WARNING |
+| CORE-SW-01 | Cisco Catalyst | 10.0.0.1 | Core Switch | ✅ HEALTHY |
+| DIST-SW-02 | Cisco Nexus | 10.0.0.2 | Distribution Switch | ✅ HEALTHY |
+| FW-PALOALTO-01 | Palo Alto PA-820 | 10.0.1.1 | Perimeter Firewall | ✅ HEALTHY |
+| SDWAN-EDGE-01 | Cisco Viptela | 10.0.2.1 | SD-WAN Edge | ✅ HEALTHY |
+| SDWAN-EDGE-02 | Cisco Viptela | 10.0.2.2 | SD-WAN Edge | ✅ HEALTHY |
+| WLC-ARUBA-01 | Aruba Controller | 10.0.3.1 | Wireless Controller | ✅ HEALTHY |
+| F5-LTM-01 | F5 BIG-IP | 10.0.4.1 | Load Balancer | ✅ HEALTHY |
+| RTR-BGP-01 | Cisco ASR 1001 | 192.168.1.1 | WAN Router | ✅ HEALTHY |
 
 ---
 
@@ -24,117 +24,91 @@
 
 ### CORE-SW-01 (`10.0.0.1`)
 **Role:** Core Switch | **Type:** Cisco Catalyst  
-**Overall Status:** WARNING  
-
-| Check | Result |
-|-------|--------|
-| Hostname configured | ✅ PASS |
-| Security policy present | ⚠️ WARN |
-| IP address configured | ✅ PASS |
-| Routing protocol present | ✅ PASS |
-
-**Issues Found:**
-- ⚠️ No security/ACL policy detected
-
-### DIST-SW-02 (`10.0.0.2`)
-**Role:** Distribution Switch | **Type:** Cisco Nexus  
-**Overall Status:** WARNING  
-
-| Check | Result |
-|-------|--------|
-| Hostname configured | ✅ PASS |
-| Security policy present | ⚠️ WARN |
-| IP address configured | ✅ PASS |
-| Routing protocol present | ✅ PASS |
-
-**Issues Found:**
-- ⚠️ No security/ACL policy detected
-
-### FW-PALOALTO-01 (`10.0.1.1`)
-**Role:** Perimeter Firewall | **Type:** Palo Alto PA-820  
-**Overall Status:** WARNING  
+**Overall Status:** HEALTHY  
 
 | Check | Result |
 |-------|--------|
 | Hostname configured | ✅ PASS |
 | Security policy present | ✅ PASS |
 | IP address configured | ✅ PASS |
-| Routing protocol present | ⚠️ WARN |
+| Routing protocol present | ✅ PASS |
 
-**Issues Found:**
-- ⚠️ No routing protocol detected
+### DIST-SW-02 (`10.0.0.2`)
+**Role:** Distribution Switch | **Type:** Cisco Nexus  
+**Overall Status:** HEALTHY  
+
+| Check | Result |
+|-------|--------|
+| Hostname configured | ✅ PASS |
+| Security policy present | ✅ PASS |
+| IP address configured | ✅ PASS |
+| Routing protocol present | ✅ PASS |
+
+### FW-PALOALTO-01 (`10.0.1.1`)
+**Role:** Perimeter Firewall | **Type:** Palo Alto PA-820  
+**Overall Status:** HEALTHY  
+
+| Check | Result |
+|-------|--------|
+| Hostname configured | ✅ PASS |
+| Security policy present | ✅ PASS |
+| IP address configured | ✅ PASS |
+| Routing protocol present | ✅ PASS |
 
 ### SDWAN-EDGE-01 (`10.0.2.1`)
 **Role:** SD-WAN Edge | **Type:** Cisco Viptela  
-**Overall Status:** WARNING  
+**Overall Status:** HEALTHY  
 
 | Check | Result |
 |-------|--------|
 | Hostname configured | ✅ PASS |
-| Security policy present | ⚠️ WARN |
+| Security policy present | ✅ PASS |
 | IP address configured | ✅ PASS |
 | Routing protocol present | ✅ PASS |
-
-**Issues Found:**
-- ⚠️ No security/ACL policy detected
 
 ### SDWAN-EDGE-02 (`10.0.2.2`)
 **Role:** SD-WAN Edge | **Type:** Cisco Viptela  
-**Overall Status:** WARNING  
+**Overall Status:** HEALTHY  
 
 | Check | Result |
 |-------|--------|
 | Hostname configured | ✅ PASS |
-| Security policy present | ⚠️ WARN |
+| Security policy present | ✅ PASS |
 | IP address configured | ✅ PASS |
 | Routing protocol present | ✅ PASS |
-
-**Issues Found:**
-- ⚠️ No security/ACL policy detected
 
 ### WLC-ARUBA-01 (`10.0.3.1`)
 **Role:** Wireless Controller | **Type:** Aruba Controller  
-**Overall Status:** CRITICAL  
+**Overall Status:** HEALTHY  
 
 | Check | Result |
 |-------|--------|
 | Hostname configured | ✅ PASS |
-| Security policy present | ⚠️ WARN |
-| IP address configured | ✅ PASS |
-| Routing protocol present | ⚠️ WARN |
-
-**Issues Found:**
-- ⚠️ No security/ACL policy detected
-- ⚠️ No routing protocol detected
-
-### F5-LTM-01 (`10.0.4.1`)
-**Role:** Load Balancer | **Type:** F5 BIG-IP  
-**Overall Status:** CRITICAL  
-
-| Check | Result |
-|-------|--------|
-| Hostname configured | ✅ PASS |
-| Security policy present | ⚠️ WARN |
-| IP address configured | ✅ PASS |
-| Routing protocol present | ⚠️ WARN |
-
-**Issues Found:**
-- ⚠️ No security/ACL policy detected
-- ⚠️ No routing protocol detected
-
-### RTR-BGP-01 (`192.168.1.1`)
-**Role:** WAN Router | **Type:** Cisco ASR 1001  
-**Overall Status:** WARNING  
-
-| Check | Result |
-|-------|--------|
-| Hostname configured | ✅ PASS |
-| Security policy present | ⚠️ WARN |
+| Security policy present | ✅ PASS |
 | IP address configured | ✅ PASS |
 | Routing protocol present | ✅ PASS |
 
-**Issues Found:**
-- ⚠️ No security/ACL policy detected
+### F5-LTM-01 (`10.0.4.1`)
+**Role:** Load Balancer | **Type:** F5 BIG-IP  
+**Overall Status:** HEALTHY  
+
+| Check | Result |
+|-------|--------|
+| Hostname configured | ✅ PASS |
+| Security policy present | ✅ PASS |
+| IP address configured | ✅ PASS |
+| Routing protocol present | ✅ PASS |
+
+### RTR-BGP-01 (`192.168.1.1`)
+**Role:** WAN Router | **Type:** Cisco ASR 1001  
+**Overall Status:** HEALTHY  
+
+| Check | Result |
+|-------|--------|
+| Hostname configured | ✅ PASS |
+| Security policy present | ✅ PASS |
+| IP address configured | ✅ PASS |
+| Routing protocol present | ✅ PASS |
 
 ---
 
@@ -157,6 +131,10 @@ interface Vlan10
 !
 spanning-tree mode rapid-pvst
 spanning-tree vlan 10,20,30 priority 4096
+!
+ip access-list standard MGMT-ACL
+ permit 10.0.0.0 0.0.255.255
+ deny   any
 !
 ip routing
 router ospf 1
@@ -292,6 +270,10 @@ router bgp 65001
  network 192.168.0.0 mask 255.255.0.0
 !
 ip route 0.0.0.0 0.0.0.0 203.0.113.1
+!
+ip access-list extended BLOCK-BOGONS
+ deny ip 10.0.0.0 0.255.255.255 any
+ permit ip any any
 !
 end
 ```
