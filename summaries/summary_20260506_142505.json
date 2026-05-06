@@ -1,0 +1,230 @@
+{
+  "backup_results": [
+    {
+      "hostname": "CORE-SW-01",
+      "ip": "10.0.0.1",
+      "role": "Core Switch",
+      "type": "Cisco Catalyst",
+      "overall_status": "WARNING",
+      "issues": [
+        "No security/ACL policy detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "WARN"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "hostname": "DIST-SW-02",
+      "ip": "10.0.0.2",
+      "role": "Distribution Switch",
+      "type": "Cisco Nexus",
+      "overall_status": "WARNING",
+      "issues": [
+        "No security/ACL policy detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "WARN"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "hostname": "FW-PALOALTO-01",
+      "ip": "10.0.1.1",
+      "role": "Perimeter Firewall",
+      "type": "Palo Alto PA-820",
+      "overall_status": "WARNING",
+      "issues": [
+        "No routing protocol detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "PASS"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "WARN"
+        }
+      ]
+    },
+    {
+      "hostname": "SDWAN-EDGE-01",
+      "ip": "10.0.2.1",
+      "role": "SD-WAN Edge",
+      "type": "Cisco Viptela",
+      "overall_status": "WARNING",
+      "issues": [
+        "No security/ACL policy detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "WARN"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "hostname": "SDWAN-EDGE-02",
+      "ip": "10.0.2.2",
+      "role": "SD-WAN Edge",
+      "type": "Cisco Viptela",
+      "overall_status": "WARNING",
+      "issues": [
+        "No security/ACL policy detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "WARN"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "hostname": "WLC-ARUBA-01",
+      "ip": "10.0.3.1",
+      "role": "Wireless Controller",
+      "type": "Aruba Controller",
+      "overall_status": "CRITICAL",
+      "issues": [
+        "No security/ACL policy detected",
+        "No routing protocol detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "WARN"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "WARN"
+        }
+      ]
+    },
+    {
+      "hostname": "F5-LTM-01",
+      "ip": "10.0.4.1",
+      "role": "Load Balancer",
+      "type": "F5 BIG-IP",
+      "overall_status": "CRITICAL",
+      "issues": [
+        "No security/ACL policy detected",
+        "No routing protocol detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "WARN"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "WARN"
+        }
+      ]
+    },
+    {
+      "hostname": "RTR-BGP-01",
+      "ip": "192.168.1.1",
+      "role": "WAN Router",
+      "type": "Cisco ASR 1001",
+      "overall_status": "WARNING",
+      "issues": [
+        "No security/ACL policy detected"
+      ],
+      "checks": [
+        {
+          "check": "Hostname configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Security policy present",
+          "status": "WARN"
+        },
+        {
+          "check": "IP address configured",
+          "status": "PASS"
+        },
+        {
+          "check": "Routing protocol present",
+          "status": "PASS"
+        }
+      ]
+    }
+  ]
+}
